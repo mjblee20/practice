@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Redirect, Switch} from "react-router-do
 
 // import pages
 import Users from './users/pages/Users';
-import NewPlace from './places/pages/NewPlace';
+import Home from './shared/pages/Home';
+import Portfolio from './places/pages/Portfolio';
 
 // import CSS styling
 import './App.css';
@@ -11,12 +12,12 @@ import './App.css';
 function App() {
   return (
     <Router className="App">
-      {/* Inside Switch block if there is a working route then it will not evaluate the lines afterwards */}
+      {/* Inside Switch block if there is a working route then it will not run the lines afterwards */}
       <Switch>
-        {/* TODO: HERE GOES ALL THE ROUTING TO PAGES*/}
-        <Route exact path='/' component={Users} />
+        {/* HERE GOES ALL THE ROUTING TO PAGES*/}
+        <Route exact path='/' component={Home} />
 
-        <Route path='/places/new' component={NewPlace} />
+        <Route path='/portfolio' component={Portfolio} />
         
         <Redirect to='/' />
       </Switch>

@@ -1,11 +1,25 @@
 import React from 'react';
 
+import UsersList from './../components/UsersList/UsersList';
+
 function Users() {
-  // TODO: Output the list of all users
+  // Eventually fetch data from backend database
+  const USERS = [
+    {
+      id: 1,
+      name: 'Bill',
+      image: 'randomURL',
+      places: 1
+    }, {
+      id: 2,
+      name: 'Ruby',
+      image: 'randomURL',
+      places: 2
+    }
+  ]
+  // Outputs all the users in the list of users
   return (
-    <div>
-      <h2>Here goes users component</h2>
-    </div>
+    <UsersList items={USERS} />
   )
 }
 
