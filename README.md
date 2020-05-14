@@ -1,2 +1,3 @@
 # mernPrac
-practicing mern stack with deployment to heroku
+
+A playground for me to learn new 
