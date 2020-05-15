@@ -1,0 +1,36 @@
+<!-- Declares the file type to be read as HTML (Hyper-Text Markup Language) -->
+<!DOCTYPE html>
+<!-- 
+  lang='en' => language is English
+  dir='ltr' => direction of content is left to right AKA ltr
+-->
+<html lang="en" dir="ltr">
+<head>
+  <!-- 
+    charset='UTF-8'
+
+    ... means...
+
+    A character in UTF8 can be from 1 to 4 bytes long. UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. UTF-8 is the preferred encoding for e-mail and web pages
+    -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title is the content that shows up on the tabs of your web browser -->
+  <title>MJB_PlayGround</title>
+</head>
+<body>
+  <h1>EXTREME Basic Number Calculator</h1>
+  
+  <!-- 
+    method: POST means sending this info to somewhere
+    action='index.html'is the location of where the info of this form is sent to 
+   -->
+  <form action="calculator.html" method="POST">
+    <input type="text" name="n1" placeholder="First Number" />
+    <input type="text" name="n2" placeholder="Second Number" />
+    <button type='submit' name='submit'>Calculate Number</button>
+  </form>
+
+</body>
+</html>
