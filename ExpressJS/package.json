@@ -1,13 +1,12 @@
 {
-  "name": "node-express",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "PRACTICING PRACTICING PRACTICING",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Ming Jung Lee",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
