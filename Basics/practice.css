@@ -1,0 +1,16 @@
+/* 
+  CSS Syntax
+
+  Selector { 
+    Property: Value;
+  }
+
+  class selector begins with .
+  .className {}
+  
+  id selector begins with #
+  #idName {}
+ */
+body {
+  background-color: slategrey;
+}

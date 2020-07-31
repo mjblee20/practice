@@ -4,18 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Basics</title>
-  
-  
   <!-- CSS has three implementations: Inline, Internal, External -->
+  <!-- This is ***Internal CSS*** -->
   <!-- <style>
     body {
       background-color: slategrey;
     }
   </style> -->
 
-  <!-- Importing EXTERNAL CSS StyleSheet -->
-  <link rel="stylesheet" href="./../CSS/practice.css">
+  <!-- Importing ***EXTERNAL CSS StyleSheet*** -->
+  <!-- 
+    These two lines are exactly the same. However, href starting with / means relative to root folder
+    and href
+    <link rel="stylesheet" href="/Basics/CSS/practice.css">
+    <link rel="stylesheet" href="./../CSS/practice.css">
 
+    / => relative to root directory
+    ./ => relative to current directory
+    ../ => relative to parent directory
+  -->
+  <link rel="stylesheet" type='text/css' href="./../CSS/practice.css">
 </head>
 <body>
   <!-- hr is a HTML tag -->
